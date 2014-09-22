@@ -1,0 +1,2268 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yuanzhe/ontologies/2013/9/SmartEnvironment"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/yuanzhe/ontologies/2013/9/SmartEnvironment">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/yuanzhe/ontologies/2013/9/untitled-ontology-22#date"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013.11.11</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:backwardCompatibleWith"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protege 4.x</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/yuanzhe/ontologies/2013/9/untitled-ontology-22#createdBy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Yang Yuanzhe</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This is an ontology for a smart environment</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionOpenWindowForRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionStabilizeIndoorTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionTurnOnLightInOccupiedDarkRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionTurnedOffActuatorsDuringHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airconditioner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BathRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bench"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blackboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blinds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cabinet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConferenceTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corridor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorridorLamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Couch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeskLamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiningRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electronic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Furniture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndoorEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeetingRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microwave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotionDetector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficeTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutdoorEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PresenceDetector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Printer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Projector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoomLamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoomWithPeopleWorkingOnPC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Server"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toilet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurnOffActuatorDuringHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurnOnLightInOccupiedDarkRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Window"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#currentTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConfiguredState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSensedState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isControllable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isHoliday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#manuallyControlled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#airconditioner1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#airconditioner2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#airconditioner3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#airconditioner4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#airconditioner5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bench2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blackboard2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blinds2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blinds3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blinds4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blinds5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cabinet5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chair4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chair5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conferencetable4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#corridor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#corridorlamp1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#couch3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#desk2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#desklamp5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamp1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamp2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamp3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamp4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamp5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lightsensor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lightsensor3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lightsensor4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lightsensor5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#microwave3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motiondetector2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motiondetector5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#officetable5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#presencedetector1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#presencedetector2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#presencedetector3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#presencedetector4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#presencedetector5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#printer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projector4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#server5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thermometer1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thermometer2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thermometer3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thermometer4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thermometer5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#toilet1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#window2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#window3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#window4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#window5"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#createdBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Actuator"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Device"/>
+            <DataHasValue>
+                <DataProperty IRI="#isControllable"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BathRoom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Room"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Toilet"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ClassRoom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Room"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Bench"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Blackboard"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Desk"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DiningRoom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Room"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Couch"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Microwave"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeetingRoom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Room"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Chair"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#ConferenceTable"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Projector"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Office"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Room"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Cabinet"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Chair"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#Computer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Class IRI="#OfficeTable"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sensor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Device"/>
+            <DataHasValue>
+                <DataProperty IRI="#isControllable"/>
+                <Literal datatypeIRI="&xsd;boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#Immaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionOpenWindowForRoom"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionStabilizeIndoorTemperature"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionTurnOnLightInOccupiedDarkRoom"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionTurnedOffActuatorsDuringHoliday"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Immaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airconditioner"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BathRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bench"/>
+        <Class IRI="#Seat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blackboard"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blinds"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cabinet"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chair"/>
+        <Class IRI="#Seat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Component"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Electronic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConferenceTable"/>
+        <Class IRI="#Table"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Corridor"/>
+        <Class IRI="#IndoorEnvironment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorridorLamp"/>
+        <Class IRI="#Light"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Couch"/>
+        <Class IRI="#Seat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creature"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desk"/>
+        <Class IRI="#Table"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeskLamp"/>
+        <Class IRI="#Light"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electronic"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environment"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Furniture"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garden"/>
+        <Class IRI="#OutdoorEnvironment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immaterial"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightSensor"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeetingRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microwave"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotionDetector"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Office"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficeTable"/>
+        <Class IRI="#Table"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutdoorEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PC"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking"/>
+        <Class IRI="#OutdoorEnvironment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy"/>
+        <Class IRI="#Immaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresenceDetector"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Printer"/>
+        <Class IRI="#Electronic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Projector"/>
+        <Class IRI="#Electronic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#IndoorEnvironment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoomLamp"/>
+        <Class IRI="#Light"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoomWithPeopleWorkingOnPC"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seat"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Server"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermometer"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#Immaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toilet"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurnOffActuatorDuringHoliday"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurnOnLightInOccupiedDarkRoom"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Window"/>
+        <Class IRI="#Electric"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Person"/>
+        <Class IRI="#Plant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BathRoom"/>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#MeetingRoom"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Creature"/>
+        <Class IRI="#Environment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Corridor"/>
+        <Class IRI="#Room"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeskLamp"/>
+        <Class IRI="#RoomLamp"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IndoorEnvironment"/>
+        <Class IRI="#OutdoorEnvironment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PC"/>
+        <Class IRI="#Server"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Airconditioner"/>
+        <NamedIndividual IRI="#airconditioner1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airconditioner"/>
+        <NamedIndividual IRI="#airconditioner2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airconditioner"/>
+        <NamedIndividual IRI="#airconditioner3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airconditioner"/>
+        <NamedIndividual IRI="#airconditioner4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airconditioner"/>
+        <NamedIndividual IRI="#airconditioner5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bench"/>
+        <NamedIndividual IRI="#bench2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Blackboard"/>
+        <NamedIndividual IRI="#blackboard2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Blinds"/>
+        <NamedIndividual IRI="#blinds2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Blinds"/>
+        <NamedIndividual IRI="#blinds3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Blinds"/>
+        <NamedIndividual IRI="#blinds4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Blinds"/>
+        <NamedIndividual IRI="#blinds5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cabinet"/>
+        <NamedIndividual IRI="#cabinet5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chair"/>
+        <NamedIndividual IRI="#chair4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chair"/>
+        <NamedIndividual IRI="#chair5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConferenceTable"/>
+        <NamedIndividual IRI="#conferencetable4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Corridor"/>
+        <NamedIndividual IRI="#corridor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorridorLamp"/>
+        <NamedIndividual IRI="#corridorlamp1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Couch"/>
+        <NamedIndividual IRI="#couch3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desk"/>
+        <NamedIndividual IRI="#desk2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeskLamp"/>
+        <NamedIndividual IRI="#desklamp5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoomLamp"/>
+        <NamedIndividual IRI="#lamp1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoomLamp"/>
+        <NamedIndividual IRI="#lamp2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoomLamp"/>
+        <NamedIndividual IRI="#lamp3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoomLamp"/>
+        <NamedIndividual IRI="#lamp4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoomLamp"/>
+        <NamedIndividual IRI="#lamp5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightSensor"/>
+        <NamedIndividual IRI="#lightsensor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightSensor"/>
+        <NamedIndividual IRI="#lightsensor3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightSensor"/>
+        <NamedIndividual IRI="#lightsensor4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightSensor"/>
+        <NamedIndividual IRI="#lightsensor5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Microwave"/>
+        <NamedIndividual IRI="#microwave3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MotionDetector"/>
+        <NamedIndividual IRI="#motiondetector2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MotionDetector"/>
+        <NamedIndividual IRI="#motiondetector5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OfficeTable"/>
+        <NamedIndividual IRI="#officetable5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PC"/>
+        <NamedIndividual IRI="#pc5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PresenceDetector"/>
+        <NamedIndividual IRI="#presencedetector1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PresenceDetector"/>
+        <NamedIndividual IRI="#presencedetector2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PresenceDetector"/>
+        <NamedIndividual IRI="#presencedetector3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PresenceDetector"/>
+        <NamedIndividual IRI="#presencedetector4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PresenceDetector"/>
+        <NamedIndividual IRI="#presencedetector5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Printer"/>
+        <NamedIndividual IRI="#printer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Projector"/>
+        <NamedIndividual IRI="#projector4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Room"/>
+        <NamedIndividual IRI="#room1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Room"/>
+        <NamedIndividual IRI="#room2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Room"/>
+        <NamedIndividual IRI="#room3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Room"/>
+        <NamedIndividual IRI="#room4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Room"/>
+        <NamedIndividual IRI="#room5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Server"/>
+        <NamedIndividual IRI="#server5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thermometer"/>
+        <NamedIndividual IRI="#thermometer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thermometer"/>
+        <NamedIndividual IRI="#thermometer2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thermometer"/>
+        <NamedIndividual IRI="#thermometer3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thermometer"/>
+        <NamedIndividual IRI="#thermometer4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thermometer"/>
+        <NamedIndividual IRI="#thermometer5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Time"/>
+        <NamedIndividual IRI="#time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toilet"/>
+        <NamedIndividual IRI="#toilet1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Window"/>
+        <NamedIndividual IRI="#window2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Window"/>
+        <NamedIndividual IRI="#window3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Window"/>
+        <NamedIndividual IRI="#window4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Window"/>
+        <NamedIndividual IRI="#window5"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#airconditioner1"/>
+        <NamedIndividual IRI="#room1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#airconditioner2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#airconditioner3"/>
+        <NamedIndividual IRI="#room3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#airconditioner4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#airconditioner5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#bench2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#blackboard2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#cabinet5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#chair4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#chair5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#conferencetable4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#corridor"/>
+        <NamedIndividual IRI="#corridorlamp1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#couch3"/>
+        <NamedIndividual IRI="#room3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#desk2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#desklamp5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <NamedIndividual IRI="#room1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lamp3"/>
+        <NamedIndividual IRI="#room3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lamp4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lamp5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lightsensor2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lightsensor3"/>
+        <NamedIndividual IRI="#room3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lightsensor4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#lightsensor5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#microwave3"/>
+        <NamedIndividual IRI="#room3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#motiondetector2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#motiondetector5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#officetable5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#pc5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#presencedetector1"/>
+        <NamedIndividual IRI="#room1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#presencedetector2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#presencedetector3"/>
+        <NamedIndividual IRI="#room3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#presencedetector4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#presencedetector5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#printer"/>
+        <NamedIndividual IRI="#corridor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#projector4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room1"/>
+        <NamedIndividual IRI="#thermometer1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room1"/>
+        <NamedIndividual IRI="#airconditioner1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room1"/>
+        <NamedIndividual IRI="#toilet1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room2"/>
+        <NamedIndividual IRI="#thermometer2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room2"/>
+        <NamedIndividual IRI="#airconditioner2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room2"/>
+        <NamedIndividual IRI="#window2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room2"/>
+        <NamedIndividual IRI="#blinds2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room3"/>
+        <NamedIndividual IRI="#thermometer3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room3"/>
+        <NamedIndividual IRI="#window3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room3"/>
+        <NamedIndividual IRI="#airconditioner3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room3"/>
+        <NamedIndividual IRI="#blinds3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room4"/>
+        <NamedIndividual IRI="#thermometer4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room4"/>
+        <NamedIndividual IRI="#airconditioner4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room4"/>
+        <NamedIndividual IRI="#blinds4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room4"/>
+        <NamedIndividual IRI="#window4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room5"/>
+        <NamedIndividual IRI="#window5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room5"/>
+        <NamedIndividual IRI="#blinds5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room5"/>
+        <NamedIndividual IRI="#thermometer5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsComponent"/>
+        <NamedIndividual IRI="#room5"/>
+        <NamedIndividual IRI="#airconditioner5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#server5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#thermometer1"/>
+        <NamedIndividual IRI="#room1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#thermometer2"/>
+        <NamedIndividual IRI="#room2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#thermometer3"/>
+        <NamedIndividual IRI="#room3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#thermometer4"/>
+        <NamedIndividual IRI="#room4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#thermometer5"/>
+        <NamedIndividual IRI="#room5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#toilet1"/>
+        <NamedIndividual IRI="#room1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+        <NamedIndividual IRI="#window2"/>
+        <NamedIndividual IRI="#blinds2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+        <NamedIndividual IRI="#window3"/>
+        <NamedIndividual IRI="#blinds3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+        <NamedIndividual IRI="#window4"/>
+        <NamedIndividual IRI="#blinds4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+        <NamedIndividual IRI="#window5"/>
+        <NamedIndividual IRI="#blinds5"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#airconditioner1"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#airconditioner1"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#airconditioner2"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#airconditioner2"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#airconditioner3"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#airconditioner3"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#airconditioner4"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#airconditioner4"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#airconditioner5"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#airconditioner5"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#blinds2"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#blinds2"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#blinds3"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#blinds3"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#blinds4"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#blinds4"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#blinds5"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#blinds5"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#corridorlamp1"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#corridorlamp1"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#desklamp5"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#desklamp5"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lamp3"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#lamp3"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lamp4"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#lamp4"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lamp5"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#lamp5"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#lightsensor2"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lightsensor2"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#lightsensor3"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lightsensor3"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#lightsensor4"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lightsensor4"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#lightsensor5"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#lightsensor5"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#microwave3"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#motiondetector2"/>
+        <Literal datatypeIRI="&xsd;double">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#motiondetector2"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#motiondetector5"/>
+        <Literal datatypeIRI="&xsd;double">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#motiondetector5"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasConfiguredState"/>
+        <NamedIndividual IRI="#pc5"/>
+        <Literal datatypeIRI="&xsd;string">ON</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#pc5"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#pc5"/>
+        <Literal datatypeIRI="&xsd;string">ON</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#presencedetector1"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#presencedetector1"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#presencedetector2"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#presencedetector2"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#presencedetector3"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#presencedetector3"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#presencedetector4"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#presencedetector4"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#presencedetector5"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#presencedetector5"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#printer"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#printer"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#projector4"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#projector4"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#server5"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#server5"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#thermometer1"/>
+        <Literal datatypeIRI="&xsd;double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#thermometer1"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#thermometer2"/>
+        <Literal datatypeIRI="&xsd;double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#thermometer2"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#thermometer3"/>
+        <Literal datatypeIRI="&xsd;double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#thermometer3"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#thermometer4"/>
+        <Literal datatypeIRI="&xsd;double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#thermometer4"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensedState"/>
+        <NamedIndividual IRI="#thermometer5"/>
+        <Literal datatypeIRI="&xsd;double">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#thermometer5"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#currentTime"/>
+        <NamedIndividual IRI="#time"/>
+        <Literal datatypeIRI="&xsd;dateTime">2013-12-25T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isHoliday"/>
+        <NamedIndividual IRI="#time"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#window2"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#window2"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#window3"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#window3"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#window4"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#window4"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#window5"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manuallyControlled"/>
+        <NamedIndividual IRI="#window5"/>
+        <Literal datatypeIRI="&xsd;string">OFF</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#containsComponent"/>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#containsComponent"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFurnishedWith"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#currentTime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasConfiguredState"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSensedState"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isControllable"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isHoliday"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#manuallyControlled"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#currentTime"/>
+        <Class IRI="#Time"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConfiguredState"/>
+        <Class IRI="#Actuator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSensedState"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isControllable"/>
+        <Class IRI="#Device"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isHoliday"/>
+        <Class IRI="#Time"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manuallyControlled"/>
+        <Class IRI="#Actuator"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#currentTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConfiguredState"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSensedState"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isControllable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isHoliday"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#manuallyControlled"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#ActionOpenWindowForRoom"/>
+                <Variable IRI="urn:swrl#w"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#manuallyControlled"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OFF</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasConfiguredState"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OPEN</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#ActionStabilizeIndoorTemperature"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#manuallyControlled"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OFF</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasConfiguredState"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Literal datatypeIRI="&xsd;double">25.0</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#ActionTurnOnLightInOccupiedDarkRoom"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#manuallyControlled"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OFF</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasConfiguredState"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">ON</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#ActionTurnedOffActuatorsDuringHoliday"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#manuallyControlled"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OFF</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasConfiguredState"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OFF</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Actuator"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TurnOffActuatorDuringHoliday"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#manuallyControlled"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OFF</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ActionTurnedOffActuatorsDuringHoliday"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Airconditioner"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#IndoorEnvironment"/>
+                <Variable IRI="urn:swrl#e"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Thermometer"/>
+                <Variable IRI="urn:swrl#th"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#e"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#e"/>
+                <Variable IRI="urn:swrl#th"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSensedState"/>
+                <Variable IRI="urn:swrl#th"/>
+                <Variable IRI="urn:swrl#lt20"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl#lt20"/>
+                <Literal datatypeIRI="&xsd;double">20.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ActionStabilizeIndoorTemperature"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Blinds"/>
+                <Variable IRI="urn:swrl#b"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#RoomWithPeopleWorkingOnPC"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Window"/>
+                <Variable IRI="urn:swrl#w"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#b"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#w"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isFurnishedWith"/>
+                <Variable IRI="urn:swrl#w"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasConfiguredState"/>
+                <Variable IRI="urn:swrl#b"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">OPEN</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ActionOpenWindowForRoom"/>
+                <Variable IRI="urn:swrl#w"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#IndoorEnvironment"/>
+                <Variable IRI="urn:swrl#e"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PresenceDetector"/>
+                <Variable IRI="urn:swrl#pd"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#e"/>
+                <Variable IRI="urn:swrl#pd"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSensedState"/>
+                <Variable IRI="urn:swrl#pd"/>
+                <Literal datatypeIRI="&xsd;double">0.0</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isHoliday"/>
+                <NamedIndividual IRI="#time"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#TurnOffActuatorDuringHoliday"/>
+                <Variable IRI="urn:swrl#e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#LightSensor"/>
+                <Variable IRI="urn:swrl#ls"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PresenceDetector"/>
+                <Variable IRI="urn:swrl#pd"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Room"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#ls"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#pd"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSensedState"/>
+                <Variable IRI="urn:swrl#ls"/>
+                <Variable IRI="urn:swrl#lt1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSensedState"/>
+                <Variable IRI="urn:swrl#pd"/>
+                <Variable IRI="urn:swrl#gt0"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl#gt0"/>
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl#lt1"/>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#TurnOnLightInOccupiedDarkRoom"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#MotionDetector"/>
+                <Variable IRI="urn:swrl#md"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PC"/>
+                <Variable IRI="urn:swrl#pc"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PresenceDetector"/>
+                <Variable IRI="urn:swrl#pd"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Room"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#md"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#pc"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#pd"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasConfiguredState"/>
+                <Variable IRI="urn:swrl#pc"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">ON</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSensedState"/>
+                <Variable IRI="urn:swrl#md"/>
+                <Literal datatypeIRI="&xsd;double">0.0</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSensedState"/>
+                <Variable IRI="urn:swrl#pd"/>
+                <Variable IRI="urn:swrl#gt0"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl#gt0"/>
+                <Literal datatypeIRI="&xsd;double">0.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RoomWithPeopleWorkingOnPC"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#RoomLamp"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TurnOnLightInOccupiedDarkRoom"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsComponent"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ActionTurnOnLightInOccupiedDarkRoom"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
